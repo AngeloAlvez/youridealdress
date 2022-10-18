@@ -1,24 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import { Logo } from './images/yourdress';
+import styled from 'styled-components';
+import { Header } from './components/Header';
+import imagemHomePage from './images/homepageimage.png'
+
+const Img = styled.img`
+width: 100vw;
+margin: 0;
+`
+const Main = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow: hidden ;
+`
+const Categories = styled.h3`
+font-family: 'EB Garamond', serif;
+font-weight: 600;
+font-size: 24px;
+margin: 20;
+letter-spacing: 2px;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Header />
+      <Img src={imagemHomePage} />
+      <Categories>categories</Categories>
+    </Main>
   );
 }
 
