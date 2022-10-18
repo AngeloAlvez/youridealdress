@@ -42,9 +42,9 @@ function App() {
       <Categories>categories</Categories>
       <DivCategories>
         <Card text='casual' image='https://img.ltwebstatic.com/images3_pi/2022/08/31/16619316646351879799204afe4d2194bd758a7f7b_thumbnail_600x.webp' />
-        <Card text='glamour' image='https://img.ltwebstatic.com/images3_pi/2022/08/31/16619316646351879799204afe4d2194bd758a7f7b_thumbnail_600x.webp' />
-        <Card text='cute' image='https://img.ltwebstatic.com/images3_pi/2022/08/31/16619316646351879799204afe4d2194bd758a7f7b_thumbnail_600x.webp' />
-        <Card text='elegant' image='https://img.ltwebstatic.com/images3_pi/2022/08/31/16619316646351879799204afe4d2194bd758a7f7b_thumbnail_600x.webp' />
+        <Card text='glamour' image='https://img.ltwebstatic.com/images3_pi/2021/12/29/164076139962437bb92b8c00b440c4832fd23e51f7_thumbnail_600x.webp' />
+        <Card text='cute' image='https://img.ltwebstatic.com/images3_pi/2020/12/22/160861699713bb564744571108958c2ae6771b8acf_thumbnail_600x.webp' />
+        <Card text='elegant' image='https://img.ltwebstatic.com/images3_pi/2022/03/30/1648609661d52945a9ceac3098099e72d44d7019b9_thumbnail_600x.webp' />
         <Card text='hot' image='https://img.ltwebstatic.com/images3_pi/2022/08/31/16619316646351879799204afe4d2194bd758a7f7b_thumbnail_600x.webp' />
         <Card text='wedding' image='https://img.ltwebstatic.com/images3_pi/2022/08/31/16619316646351879799204afe4d2194bd758a7f7b_thumbnail_600x.webp' />
       </DivCategories>
