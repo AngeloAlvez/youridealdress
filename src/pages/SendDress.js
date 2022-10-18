@@ -1,5 +1,7 @@
 export const FormSendDress = () => {
-  console.log('aquii');
+    console.log('aquii');
+    return (
+        <h1>Envie seu vestido</h1>
+    )
 
-  <h1>Envie seu vestido</h1>;
 };
