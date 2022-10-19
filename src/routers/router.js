@@ -5,7 +5,7 @@ import { DetailsDress } from '../pages/DetailsDress';
 export const Router = () => {
   return (
     <BrowserRouter>
-      {console.log('aquii')}
+      {console.log('aqui2i')}
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/categories/:id" element={<DetailsDress />} />

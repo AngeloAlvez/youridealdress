@@ -9,6 +9,6 @@ export const goToForm = (navigate) => {
   navigate('/sendDress');
 };
 
-export const goToDetails = (navigate) => {
-  navigate('/categories/:id');
+export const goToCategories = (navigate, props) => {
+  navigate(`/categories/${props}`);
 };

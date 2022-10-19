@@ -1,12 +1,15 @@
 import styled from "styled-components"
+import { goToCategories } from "../routers/cordinator"
+import { useNavigate } from 'react-router-dom';
 
-
-const DivCard = styled.div`
+const DivCard = styled.a`
 display: flex;
 flex-direction: column;
 align-items: center;
 width: 135px;
 margin: 10px 15px;
+text-decoration: none;
+color:black;
 `
 const Img = styled.img`
 width: 135px;
@@ -28,10 +31,13 @@ text-align: center;
 `
 
 export const Card = (props) => {
+    const navigate = useNavigate()
+
     return (
-        <DivCard>
+        <DivCard href={props.link}>
+
             <Crop>
-                <Img src={props.image} />
+                {props.categoria ? <Img onClick={() => goToCategories(navigate, props.categoria)} src={props.image} /> : <Img src={props.image} />}
             </Crop>
 
             <Title>{props.text}</Title>
