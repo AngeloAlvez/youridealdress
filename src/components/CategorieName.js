@@ -1,17 +1,5 @@
 import { useEffect, useState } from "react";
-import styled from "styled-components";
-import '../styles/global.css';
-import Fade from '@mui/material/Fade';
-import Zoom from '@mui/material/Zoom';
-
-const H2 = styled.h2`
-font-family: 'EB Garamond', serif;
-font-weight: 400;
-font-size: 28px;
-letter-spacing: 10px;
-text-align: center;
-color: gray;
-`
+import { FadeText } from "./FadeText";
 
 export const CategorieName = (props) => {
     const [nomeCategoria, setNomeCategoria] = useState('')
@@ -42,10 +30,7 @@ export const CategorieName = (props) => {
     }, []);
 
     return (
-        <Zoom in={true} transitionDelay='2000ms' >
-            <H2 className='fade-in-text'>{nomeCategoria}</H2>
-        </Zoom >
-
+        <FadeText text={nomeCategoria} />
 
     )
 }

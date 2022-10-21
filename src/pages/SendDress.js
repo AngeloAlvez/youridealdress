@@ -3,16 +3,7 @@ import styled from "styled-components"
 import { Main } from "./HomePage"
 import { useState } from "react"
 import axios from "axios"
-import Zoom from '@mui/material/Zoom';
-
-const H2 = styled.h2`
-font-family: 'EB Garamond', serif;
-font-weight: 400;
-font-size: 28px;
-letter-spacing: 5px;
-text-align: center;
-color: gray;
-`
+import { FadeText } from "../components/FadeText"
 
 
 const DivForm = styled.div`
@@ -109,9 +100,7 @@ export const FormSendDress = () => {
     return (
         <Main>
             <Header />
-            <Zoom in={true} transitionDelay='2000ms' >
-                <H2 className='fade-in-text'>send your dress</H2>
-            </Zoom >
+            <FadeText text={'send your dress'} />
             <DivForm>
                 <DivInput>
                     <Label>name: </Label>

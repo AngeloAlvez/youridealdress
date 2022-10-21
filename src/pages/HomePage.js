@@ -2,16 +2,7 @@ import styled from 'styled-components';
 import { Header } from '../components/Header';
 import imagemHomePage from '../images/homepageimage.png';
 import { Card } from '../components/Card';
-
-const H2 = styled.h2`
-font-family: 'EB Garamond', serif;
-font-weight: 400;
-font-size: 28px;
-letter-spacing: 5px;
-text-align: center;
-color: gray;
-`
-
+import { FadeText } from '../components/FadeText';
 
 const Img = styled.img`
   width: 100vw;
@@ -51,7 +42,7 @@ const HomePage = () => {
 
       <Img src={imagemHomePage} className='fade-in-text' />
 
-      <H2 className='fade-in-text'>categories</H2>
+      <FadeText text={'categories'} />
 
 
       <DivCategories className='fade-in-text'  >
