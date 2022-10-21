@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Header } from '../components/Header';
 import imagemHomePage from '../images/homepageimage.png';
 import { Card } from '../components/Card';
-import { goToCategories } from '../routers/cordinator';
 import Zoom from '@mui/material/Zoom';
 
 

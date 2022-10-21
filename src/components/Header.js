@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 import { Logo } from "../images/yourdress"
-import { goToLastPage, goToForm } from "../routers/cordinator"
+import { goToLastPage, goToForm, goToHome } from "../routers/cordinator"
 import { SlArrowLeft, SlTag } from "react-icons/sl";
 import { GiLargeDress } from "react-icons/gi";
 import { HiPlusSm } from "react-icons/hi";
@@ -45,7 +45,7 @@ export const Header = () => {
         <DivHeader>
 
             {buttonText && <ButtonBack onClick={() => goToLastPage(navigate)}> <SlArrowLeft /></ButtonBack>}
-            <Logo />
+            <Logo onClick={() => alert()} />
             {buttonForm && <ButtonForm onClick={() => goToForm(navigate)}><GiLargeDress /> <PositionDress> <HiPlusSm /></PositionDress></ButtonForm>}
 
         </DivHeader >
