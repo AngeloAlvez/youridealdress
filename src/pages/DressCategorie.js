@@ -51,19 +51,19 @@ margin:0 0 -10px 85px;
 
 export const DetailsDress = (props) => {
   const { id } = useParams();
-  const [post, setPost] = useState(null);
+  const [dress, setDress] = useState(null);
   const [filtro, setfiltro] = useState('');
 
   useEffect(() => {
     axios
       .get(`https://backend-amaro.herokuapp.com/products/${id}`)
       .then((response) => {
-        setPost(response.data);
+        setDress(response.data);
       });
   }, []);
 
-  if (!post) return null;
-  const todos = post.map((vestido) => {
+  if (!dress) return null;
+  const todos = dress.map((vestido) => {
     return (
       <>
         <Card text={vestido.name} image={vestido.image} link={vestido.url} />
@@ -71,7 +71,7 @@ export const DetailsDress = (props) => {
     );
   });
 
-  const filtrados = post.map((vestido) => {
+  const filtrados = dress.map((vestido) => {
     if (vestido.color === filtro) {
       return (
         <>
