@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 import { Logo } from "../images/yourdress"
 import { goToLastPage, goToForm } from "../routers/cordinator"
+import { SlArrowLeft, SlTag } from "react-icons/sl";
+
 
 const DivHeader = styled.div`
 display: flex;
@@ -13,12 +15,18 @@ const ButtonBack = styled.button`
 position: absolute;
 top: 34px;
 left: 34px;
+background-color: white;
+border: none;
+font-size: 20px;
 `
 
 const ButtonForm = styled.button`
 position: absolute;
 top: 34px;
 right: 34px;
+background-color: white;
+border: none;
+font-size: 20px;
 `
 export const Header = () => {
     const navigate = useNavigate()
@@ -29,11 +37,11 @@ export const Header = () => {
     return (
         <DivHeader>
 
-            {buttonText && <ButtonBack onClick={() => goToLastPage(navigate)}> voltar</ButtonBack>}
+            {buttonText && <ButtonBack onClick={() => goToLastPage(navigate)}> <SlArrowLeft /></ButtonBack>}
             <Logo />
-            {buttonForm && <ButtonForm onClick={() => goToForm(navigate)}>form</ButtonForm>}
+            {buttonForm && <ButtonForm onClick={() => goToForm(navigate)}><SlTag /></ButtonForm>}
 
-        </DivHeader>
+        </DivHeader >
 
     )
 }

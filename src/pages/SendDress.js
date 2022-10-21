@@ -77,18 +77,23 @@ export const FormSendDress = () => {
             "color": color,
             "image": image
         }
+        if (name, categorie, link, color, image !== '') {
+            axios.post('https://backend-amaro.herokuapp.com/product', body)
+                .then((response) => {
+                    alert('Vestido enviado com sucesso')
+                    setName('')
+                    setCategorie('casual')
+                    setColor('preto')
+                    setImage('')
+                    setLink('')
+                }, (error) => {
+                    console.log(error);
+                })
+        } else {
+            alert('Nenhum campo pode estar vazio')
+        }
 
-        axios.post('https://backend-amaro.herokuapp.com/product', body)
-            .then((response) => {
-                alert('Vestido enviado com sucesso')
-                setName('')
-                setCategorie('casual')
-                setColor('preto')
-                setImage('')
-                setLink('')
-            }, (error) => {
-                console.log(error);
-            });
+
     }
 
     return (
