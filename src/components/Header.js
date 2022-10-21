@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
-import { Logo } from "../images/yourdress"
+import { Logo } from "../images/logo"
 import { goToLastPage, goToForm, goToHome } from "../routers/cordinator"
 import { SlArrowLeft, SlTag } from "react-icons/sl";
 import { GiLargeDress } from "react-icons/gi";

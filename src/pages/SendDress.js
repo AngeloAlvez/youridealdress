@@ -58,6 +58,12 @@ border:none;
 margin: 20px 0 60px;
 @media (min-width: 769px) {
     width:30vw;
+  }&:hover{
+    transform: scale(1.07);
+    transition:0.2s;
+  }
+ &:active{
+    background-color: #f08b8b;
   }
 `
 

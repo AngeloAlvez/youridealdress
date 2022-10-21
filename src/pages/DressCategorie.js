@@ -18,6 +18,7 @@ const DivButton = styled.div`
   width: 100%;
   justify-content: center;
   margin: 20px;
+ 
 `
 const Button = styled.button`
   cursor: pointer;
@@ -27,6 +28,14 @@ const Button = styled.button`
   border-radius: 50%;
   ${({ border }) => (border ? `border: ${border} ` : 'border:none ')};
   ${({ color }) => color && `background-color: ${color} `};
+  &:hover{
+    transform: scale(1.2);
+    transition:0.2s;
+  }&:active{
+     transform: translateY(0);
+     transform: translateY(10px);
+     transition:0.2s;
+  }
 `
 
 const ButtonGradient = styled.button`
@@ -38,6 +47,14 @@ const ButtonGradient = styled.button`
   ${({ border }) => (border ? `border: ${border} ` : 'border:none ')};
   background: rgb(236,166,254);
   background: linear-gradient(55deg, rgba(236,166,254,1) 23%, rgba(217,88,88,1) 39%, rgba(108,145,240,1) 58%, rgba(161,237,154,1) 75%, rgba(255,255,255,1) 92%);
+  &:hover{
+    transform: scale(1.2);
+    transition:0.2s;
+  }&:active{
+     transform: translateY(0);
+     transform: translateY(10px);
+     transition:0.2s;
+  }
 `
 const Colors = styled.h4`
 font-family: 'EB Garamond', serif;
