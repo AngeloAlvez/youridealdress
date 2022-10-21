@@ -147,7 +147,7 @@ export const FormSendDress = () => {
                     <Label>link: </Label>
                     <Input value={link} onChange={(e) => setLink(e.target.value)} />
                 </DivInput>
-                <ButtonSend onClick={() => send()}>send us</ButtonSend>
+                <ButtonSend className='fade-in-text' onClick={() => send()}>send us</ButtonSend>
             </DivForm>
 
 

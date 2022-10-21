@@ -8,6 +8,7 @@ import { DivCategories, Main } from './HomePage';
 import { Header } from '../components/Header';
 import '../styles/global.css';
 import { CategorieName } from '../components/CategorieName';
+
 const Img = styled.img`
   width: 50px;
 `
