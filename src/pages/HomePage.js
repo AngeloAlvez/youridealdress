@@ -26,6 +26,9 @@ export const DivCategories = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+  @media (min-width: 769px) {
+   justify-content: space-evenly;
+  }
 `;
 const Categories = styled.h3`
   font-family: 'EB Garamond', serif;

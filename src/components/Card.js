@@ -10,6 +10,9 @@ width: 135px;
 margin: 10px 15px;
 text-decoration: none;
 color:black;
+@media (min-width: 769px) {
+    width: 250px;
+  }
 `
 const Img = styled.img`
 width: 135px;
@@ -28,6 +31,10 @@ font-family: 'EB Garamond', serif;
 font-weight: 400;
 font-size: 20px;
 text-align: center;
+@media (min-width: 769px) {
+    font-size:22px;
+    letter-spacing: 3px;
+  }
 `
 
 export const Card = (props) => {

@@ -3,13 +3,15 @@ import styled from "styled-components"
 import { Logo } from "../images/yourdress"
 import { goToLastPage, goToForm } from "../routers/cordinator"
 import { SlArrowLeft, SlTag } from "react-icons/sl";
-
+import { GiLargeDress } from "react-icons/gi";
+import { HiPlusSm } from "react-icons/hi";
 
 const DivHeader = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-evenly;
 padding: 30px;
+flex-wrap: wrap;
 `
 const ButtonBack = styled.button`
 position: absolute;
@@ -28,6 +30,11 @@ background-color: white;
 border: none;
 font-size: 20px;
 `
+const PositionDress = styled.div`
+position: relative;
+left:12px;
+top:-10px;
+`
 export const Header = () => {
     const navigate = useNavigate()
     const buttonText = window.location.pathname !== '/'
@@ -39,7 +46,7 @@ export const Header = () => {
 
             {buttonText && <ButtonBack onClick={() => goToLastPage(navigate)}> <SlArrowLeft /></ButtonBack>}
             <Logo />
-            {buttonForm && <ButtonForm onClick={() => goToForm(navigate)}><SlTag /></ButtonForm>}
+            {buttonForm && <ButtonForm onClick={() => goToForm(navigate)}><GiLargeDress /> <PositionDress> <HiPlusSm /></PositionDress></ButtonForm>}
 
         </DivHeader >
 
